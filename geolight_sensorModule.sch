@@ -252,17 +252,6 @@ F 3 "" H 9550 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X06 P5
-U 1 1 57CBE4B3
-P 9550 4850
-F 0 "P5" H 9550 5200 50  0000 C CNN
-F 1 "OUT (JP for IN)" V 9650 4850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06" H 9550 4850 50  0001 C CNN
-F 3 "" H 9550 4850 50  0000 C CNN
-	1    9550 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L +5V #PWR08
 U 1 1 57CBEA94
 P 8650 2300
@@ -292,21 +281,6 @@ Text Label 8150 3900 0    60   ~ 0
 MISO
 Text Label 8150 4100 0    60   ~ 0
 SS
-Text Label 8150 5300 0    60   ~ 0
-MISO
-Text Label 8150 5500 0    60   ~ 0
-SDA/MOSI
-$Comp
-L GS3 JP1
-U 1 1 57CC0AD0
-P 8800 5400
-F 0 "JP1" H 8750 5600 50  0000 C CNN
-F 1 "IN/OUT" H 8800 5200 50  0000 C CNN
-F 2 "Connect:GS3" V 8888 5326 50  0001 C CNN
-F 3 "" H 8800 5400 50  0000 C CNN
-	1    8800 5400
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_02X03 P2
 U 1 1 57CC2B02
@@ -392,6 +366,85 @@ F 3 "" H 3650 2600 50  0000 C CNN
 	1    3650 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L +5V #PWR013
+U 1 1 57CC3AB8
+P 4500 2300
+F 0 "#PWR013" H 4500 2150 50  0001 C CNN
+F 1 "+5V" H 4500 2440 50  0000 C CNN
+F 2 "" H 4500 2300 50  0000 C CNN
+F 3 "" H 4500 2300 50  0000 C CNN
+	1    4500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 57CC5F58
+P 7700 3450
+F 0 "R2" H 7750 3300 50  0000 L CNN
+F 1 "4k7" V 7800 3400 50  0000 L CNN
+F 2 "Discret:R1" H 7700 3450 50  0001 C CNN
+F 3 "" H 7700 3450 50  0000 C CNN
+	1    7700 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 57CC6137
+P 8000 3450
+F 0 "R3" H 8050 3300 50  0000 L CNN
+F 1 "4k7" V 8100 3400 50  0000 L CNN
+F 2 "Discret:R1" H 8000 3450 50  0001 C CNN
+F 3 "" H 8000 3450 50  0000 C CNN
+	1    8000 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR014
+U 1 1 57CC6764
+P 7850 2300
+F 0 "#PWR014" H 7850 2150 50  0001 C CNN
+F 1 "+5V" H 7850 2440 50  0000 C CNN
+F 2 "" H 7850 2300 50  0000 C CNN
+F 3 "" H 7850 2300 50  0000 C CNN
+	1    7850 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 6700 3650 0    60   ~ 0
+(these pullups are \n likely unnecessary)
+$Comp
+L CONN_01X02 P6
+U 1 1 57CBCD0E
+P 5650 3550
+F 0 "P6" H 5750 3600 50  0000 C CNN
+F 1 "UART(test)" H 5900 3500 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 5650 3550 50  0001 C CNN
+F 3 "" H 5650 3550 50  0000 C CNN
+	1    5650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 57CBD55D
+P 5450 2350
+F 0 "R6" V 5350 2250 50  0000 L CNN
+F 1 "10k" V 5550 2250 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5450 2350 50  0001 C CNN
+F 3 "" H 5450 2350 50  0000 C CNN
+	1    5450 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR015
+U 1 1 57CBD563
+P 5200 2300
+F 0 "#PWR015" H 5200 2150 50  0001 C CNN
+F 1 "+5V" H 5200 2440 50  0000 C CNN
+F 2 "" H 5200 2300 50  0000 C CNN
+F 3 "" H 5200 2300 50  0000 C CNN
+	1    5200 2300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	5250 4000 9350 4000
 Wire Wire Line
@@ -399,15 +452,9 @@ Wire Wire Line
 Connection ~ 6300 2900
 Wire Wire Line
 	5850 2900 6750 2900
-Wire Wire Line
-	9100 5000 9350 5000
-Wire Wire Line
-	9100 3000 9100 5000
 Connection ~ 8900 2600
-Connection ~ 8900 3600
 Wire Wire Line
 	8900 3600 9350 3600
-Connection ~ 8950 3700
 Wire Wire Line
 	9350 3700 8950 3700
 Connection ~ 9000 3800
@@ -419,31 +466,15 @@ Connection ~ 9150 4100
 Wire Wire Line
 	5250 4100 9350 4100
 Wire Wire Line
-	8900 4600 9350 4600
-Wire Wire Line
 	8650 2600 9350 2600
-Wire Wire Line
-	8900 2600 8900 4600
-Wire Wire Line
-	8950 4700 9350 4700
 Wire Wire Line
 	8650 2700 9350 2700
 Wire Wire Line
-	9000 4800 9350 4800
-Wire Wire Line
-	9000 2800 9000 4800
-Wire Wire Line
 	9350 2800 9000 2800
-Wire Wire Line
-	8800 5400 9050 5400
 Wire Wire Line
 	9350 2900 9050 2900
 Wire Wire Line
 	9100 3000 9350 3000
-Wire Wire Line
-	9150 5100 9350 5100
-Wire Wire Line
-	9150 3100 9150 5100
 Wire Wire Line
 	9350 3100 9150 3100
 Wire Wire Line
@@ -501,26 +532,12 @@ Wire Wire Line
 Wire Wire Line
 	5250 3400 5700 3400
 Wire Wire Line
-	8150 5300 8800 5300
-Wire Wire Line
-	8650 5500 8150 5500
-Wire Wire Line
-	8800 5300 8800 5400
-Connection ~ 8950 5400
-Connection ~ 8650 5300
-Wire Wire Line
 	9050 2900 9050 3900
-Wire Wire Line
-	8950 2700 8950 4700
 Wire Wire Line
 	8650 2900 8650 2700
 Connection ~ 8950 2700
 Wire Wire Line
 	8650 2600 8650 2300
-Wire Wire Line
-	9350 4900 9050 4900
-Wire Wire Line
-	9050 4900 9050 5400
 Wire Wire Line
 	2050 2650 2650 2650
 Wire Wire Line
@@ -553,17 +570,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 2900 4500 2800
 Connection ~ 4500 2800
-$Comp
-L +5V #PWR013
-U 1 1 57CC3AB8
-P 4500 2300
-F 0 "#PWR013" H 4500 2150 50  0001 C CNN
-F 1 "+5V" H 4500 2440 50  0000 C CNN
-F 2 "" H 4500 2300 50  0000 C CNN
-F 3 "" H 4500 2300 50  0000 C CNN
-	1    4500 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 2400 4700 2400
 Wire Wire Line
@@ -572,28 +578,6 @@ Connection ~ 4500 2400
 Wire Wire Line
 	3100 4750 2500 4750
 Connection ~ 2500 4750
-$Comp
-L R_Small R2
-U 1 1 57CC5F58
-P 7700 3450
-F 0 "R2" H 7750 3300 50  0000 L CNN
-F 1 "4k7" V 7800 3400 50  0000 L CNN
-F 2 "Discret:R1" H 7700 3450 50  0001 C CNN
-F 3 "" H 7700 3450 50  0000 C CNN
-	1    7700 3450
-	-1   0    0    1   
-$EndComp
-$Comp
-L R_Small R3
-U 1 1 57CC6137
-P 8000 3450
-F 0 "R3" H 8050 3300 50  0000 L CNN
-F 1 "4k7" V 8100 3400 50  0000 L CNN
-F 2 "Discret:R1" H 8000 3450 50  0001 C CNN
-F 3 "" H 8000 3450 50  0000 C CNN
-	1    8000 3450
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7700 3550 7700 3800
 Wire Wire Line
@@ -604,20 +588,7 @@ Wire Wire Line
 	7700 3350 7700 3100
 Wire Wire Line
 	8000 3100 8000 3350
-$Comp
-L +5V #PWR014
-U 1 1 57CC6764
-P 7850 2300
-F 0 "#PWR014" H 7850 2150 50  0001 C CNN
-F 1 "+5V" H 7850 2440 50  0000 C CNN
-F 2 "" H 7850 2300 50  0000 C CNN
-F 3 "" H 7850 2300 50  0000 C CNN
-	1    7850 2300
-	1    0    0    -1  
-$EndComp
 Connection ~ 7850 3100
-Text Notes 6700 3650 0    60   ~ 0
-(these pullups are \n likely unnecessary)
 Wire Wire Line
 	5250 3500 5450 3500
 Wire Wire Line
@@ -630,44 +601,19 @@ Wire Wire Line
 	5550 2350 5900 2350
 Connection ~ 7700 3800
 Connection ~ 8000 4000
-Text Notes 8100 5850 0    60   ~ 0
-(not really necessary for I2C, \n but could be helpful for SPI)
-$Comp
-L CONN_01X02 P6
-U 1 1 57CBCD0E
-P 5650 3550
-F 0 "P6" H 5750 3600 50  0000 C CNN
-F 1 "UART(test)" H 5900 3500 50  0000 C CNN
-F 2 "Measurement_Points:Test_Point" H 5650 3550 50  0001 C CNN
-F 3 "" H 5650 3550 50  0000 C CNN
-	1    5650 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R6
-U 1 1 57CBD55D
-P 5450 2350
-F 0 "R6" V 5350 2250 50  0000 L CNN
-F 1 "10k" V 5550 2250 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 5450 2350 50  0001 C CNN
-F 3 "" H 5450 2350 50  0000 C CNN
-	1    5450 2350
-	0    1    1    0   
-$EndComp
-$Comp
-L +5V #PWR015
-U 1 1 57CBD563
-P 5200 2300
-F 0 "#PWR015" H 5200 2150 50  0001 C CNN
-F 1 "+5V" H 5200 2440 50  0000 C CNN
-F 2 "" H 5200 2300 50  0000 C CNN
-F 3 "" H 5200 2300 50  0000 C CNN
-	1    5200 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 2300 5200 2350
 Wire Wire Line
 	5200 2350 5350 2350
 Connection ~ 5700 2350
+Wire Wire Line
+	9150 3100 9150 4100
+Wire Wire Line
+	9100 3000 9100 4000
+Wire Wire Line
+	9000 2800 9000 3800
+Wire Wire Line
+	8950 3700 8950 2700
+Wire Wire Line
+	8900 2600 8900 3600
 $EndSCHEMATC
