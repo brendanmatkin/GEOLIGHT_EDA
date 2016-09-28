@@ -1,0 +1,14 @@
+### Module positions - created on Wednesday, September 07, 2016 'pmt' 02:02:17 pm ###
+### Printed by Pcbnew version kicad 4.0.2-stable
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref      Val            Package                             PosX       PosY       Rot  Side
+16M        16Mhz          Resonator_3.2x1.3mm             148.9140  -120.1420    0.0000  top
+ATTINY841  ATTINY841-SSU  SOIC-14_3.9x8.7mm_Pitch1.27mm   150.2410  -114.9020   90.0000  top
+C2         0.1uF          C_0603                          145.0340  -114.9470   90.0000  top
+C3         10uF           c_elec_4x5.8                    157.4800  -112.4991   90.0000  top
+R1         220?           R_0603                          162.0520  -126.7460   90.0000  top
+R4         10k            R_0603                          150.7610  -122.5550  180.0000  top
+R5         220?           R_0603                          158.0000  -119.7610  180.0000  top
+R6         10k            R_0603                          152.6540  -125.8570  270.0000  top
+## End

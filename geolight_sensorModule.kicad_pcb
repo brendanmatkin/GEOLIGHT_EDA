@@ -1,7 +1,7 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.2-stable)
 
   (general
-    (links 0)
+    (links 51)
     (no_connects 0)
     (area 140.5276 107.45172 175.558353 133.528356)
     (thickness 1.6)
@@ -14,15 +14,15 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user)
+    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (44 Edge.Cuts user)
+    (44 Edge.Cuts user hide)
     (48 B.Fab user hide)
     (49 F.Fab user hide)
   )
@@ -78,7 +78,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory plots_v1.0/))
+      (outputdirectory geolight_rev1_PCBA/))
   )
 
   (net 0 "")
