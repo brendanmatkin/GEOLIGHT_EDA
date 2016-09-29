@@ -3,7 +3,7 @@
   (general
     (links 48)
     (no_connects 0)
-    (area 140.964999 108.452999 173.995001 133.355001)
+    (area 139.7656 105.349409 174.917032 135.624734)
     (thickness 1.6)
     (drawings 20)
     (tracks 399)
@@ -22,7 +22,7 @@
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (44 Edge.Cuts user hide)
+    (44 Edge.Cuts user)
     (48 B.Fab user hide)
     (49 F.Fab user hide)
   )
@@ -78,7 +78,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory geolight_rev1_PCBA/))
+      (outputdirectory geolight_rev2.0_PCBA/))
   )
 
   (net 0 "")

@@ -1,0 +1,14 @@
+### Module positions - created on Thursday, September 29, 2016 'amt' 01:46:23 am ###
+### Printed by Pcbnew version kicad 4.0.2-stable
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                             PosX       PosY       Rot  Side
+C2        0.1uF          C_0603_HandSolderingShort       146.1770  -113.5380   90.0000  top
+C3        10uF           c_elec_4x5.8                    158.7500  -112.0140   90.0000  top
+IC1       ATTINY841-SSU  SOIC-14_3.9x8.7mm_Pitch1.27mm   151.5110  -113.4110   90.0000  top
+R1        220            R_0603_HandSolderingShort       150.2410  -123.3170    0.0000  top
+R4        10k            R_0603_HandSolderingShort       151.1300  -120.0150    0.0000  top
+R5        220            R_0603_HandSolderingShort       151.1300  -118.4910  180.0000  top
+R6        10k            R_0603_HandSolderingShort       150.2410  -121.7930  180.0000  top
+Y1        16Mhz          Resonator_3.2x1.3mm             147.4470  -119.2530  270.0000  top
+## End
