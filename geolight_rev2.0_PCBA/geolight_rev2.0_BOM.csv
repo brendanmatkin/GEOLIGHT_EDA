@@ -1,0 +1,24 @@
+Refs,Value,Footprint,QTY,MFR,MPN,SPR,SPN
+C2,0.1uF,Capacitors_SMD:C_0603_HandSoldering,1,,,,
+C3,10uF,Capacitors_SMD:c_elec_4x5.8,1,,,,
+JP2,DNP*,Connect:GS2,1,,,,
+JP1,DNP*,Connect:GS3,1,,,,
+Y1,16Mhz,Crystals:Resonator_3.2x1.3mm,1,Murata,CSTCE16M0V53-R0 (or equivalent),Digikey,490-1198-1-ND
+IC1,ATTINY841-SSU,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,1,Atmel,ATTINY841-SSU,Digikey,ATTINY841-SSU-ND
+D1,"White, 6.7mm tall, flat top",LEDs:LED-5MM,1,,,,
+P6,DNP*,Measurement_Points:Test_Point,1,,,,
+P5,DNP*,Pin_Headers:Pin_Header_Straight_1x03,1,,,,
+P3,"Male Pin Header, Straight",Pin_Headers:Pin_Header_Straight_1x06,1,,,,
+P4,"Male Pin Header, Straight",Pin_Headers:Pin_Header_Straight_1x06,1,,,,
+P2,DNP*,Pin_Headers:Pin_Header_Straight_2x03,1,,,,
+R4;R6,10k Ohms,Resistors_SMD:R_0603_HandSoldering,2,,,,
+R5;R1,220 Ohms,Resistors_SMD:R_0603_HandSoldering,2,,,,
+U1,TCRT5000/L,TCRT5000L:XDCR_TCRT5000L,1,Vishay,TCRT5000L,digikey,751-1034-5-ND
+P1,DNP*,Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol,1,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,Notes,,,,,,
+,*DNP = Do No Populate,,,,,,
+,IC1 must be as specc'd,,,,,,
+,U1 must be as specc'd,,,,,,
